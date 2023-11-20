@@ -11,11 +11,27 @@ struct ContentView: View {
     // initiate our location manager
     @StateObject var locationManager = LocationManager()
     
+    // initiate the weather manager
+    var weatherManager = WeatherManager()
+    // @State is for simple data that when changed, should cause the view to update
+    @State var weather: ResponseBody?
+    
     var body: some View {
         VStack {
             // Check if there is a location available in locationManager
             if let location = locationManager.location {
-                Text("Your corordinates are:\(location.longitude),\(location.latitude)")
+                if let weather = weather {
+                    Text("Weather data fetched")
+                } else {
+                    LoadingView()
+                        .task {
+                            do {
+                                weather = try await weatherManager.getCurrentWeather(latitude: location.latitude, longitude: location.longitude)
+                            } catch {
+                                print("Error getting weather: \(error)")
+                            }
+                        }
+                }
             } else {
                 if locationManager.isLoading {
                     LoadingView()
