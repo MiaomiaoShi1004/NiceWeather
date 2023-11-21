@@ -23,7 +23,7 @@ struct WelcomeView: View {
             .multilineTextAlignment(.center)
             .padding()
             
-            // LocationButton from CoreLocationUI framework imported above, allow us to requestionLocation
+            // LocationButton from CoreLocationUI framework imported above, allow us to requestionLocation      
             LocationButton(.shareCurrentLocation) {
                 locationManager.requestLocation()
             }
