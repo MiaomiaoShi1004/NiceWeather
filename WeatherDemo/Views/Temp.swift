@@ -9,19 +9,22 @@ import SwiftUI
 
 struct Temp: View {
     var body: some View {
-        ZStack(alignment: .leading) {
-            Color.gray.edgesIgnoringSafeArea(.all) // Background color for visibility
+        VStack(spacing: 20) {
+            Text("Rounded Top Corners")
+                .padding()
+                .frame(width: 200, height: 100)
+                .background(Color.blue)
+                .foregroundColor(.white)
+                // Apply rounded corners to top-left and top-right
+                .cornerRadius(25, corners: .topLeft)
 
-            VStack(alignment: .center, spacing: 10) {
-                Text("First Item")
-                    .font(.system(size: 22))
-                Text("Second Item")
-                Text("Third Item")
-            }
-            .font(.system(size: 28))
-            .padding()
-            .background(Color.white)
-            .cornerRadius(10)
+            Text("Rounded Bottom Corners")
+                .padding()
+                .frame(width: 200, height: 100)
+                .background(Color.red)
+                .foregroundColor(.white)
+                // Apply rounded corners to bottom-left and bottom-right
+                .cornerRadius(25, corners: [.bottomLeft, .bottomRight])
         }
     }
 }

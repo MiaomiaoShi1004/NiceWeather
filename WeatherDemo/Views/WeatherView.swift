@@ -43,9 +43,9 @@ struct WeatherView: View {
                             .padding()
                     }
                     
-                    Spacer().frame(height: 80)
+                    Spacer().frame(height: 70)
                     
-                    AsyncImage(url: URL(string: "https://cdn.dribbble.com/users/296515/screenshots/2003229/media/d7a1340b6464c25175689836230ffaf1.png")) { image in image.resizable().aspectRatio(contentMode: .fit).frame(width: 350)
+                    AsyncImage(url: URL(string: "https://cdn.dribbble.com/users/665790/screenshots/3118982/media/a025bf3332bbb65189d3c2014cb41aba.jpg")) { image in image.resizable().aspectRatio(contentMode: .fit).frame(width: 350)
                     } placeholder: {
                         ProgressView()
                     }
@@ -53,17 +53,47 @@ struct WeatherView: View {
                     Spacer()
                 }
                 .frame(maxWidth: .infinity)
- 
-                
+//                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
             }
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
             
-            Spacer()
+            VStack() {
+                Spacer()
+                
+                VStack(alignment: .leading, spacing: 20) {
+                    Text("Weather now").bold().padding(.bottom)
+                    
+                    HStack() {
+                        WeatherRow(logo: "thermometer.low", name: "Min temp", value: (weather.main.tempMin.roundDouble() + "°"))
+                        
+                        Spacer()
+                        
+                        WeatherRow(logo: "thermometer.high", name: "Max temp ", value: (weather.main.tempMax.roundDouble() + "°"))
+                    }
+                    
+                    HStack() {
+                        WeatherRow(logo: "wind",
+                                   name: "Wind speed",
+                                   value: (weather.wind.speed.roundDouble() + "m/s"))
+                        
+                        Spacer()
+                        
+                        WeatherRow(logo: "humidity.fill", name: "Humidity", value: (weather.main.humidity.roundDouble() + "%"))
+                    }
+                    
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+                .padding(.bottom, 20)
+                .foregroundColor(Color(red: 0.886, green: 0.352, blue: 0.425))
+                .background(.white)
+                .cornerRadius(20, corners: [.topLeft, .topRight])
+            }
             
         }
         .edgesIgnoringSafeArea(.bottom)
-        .background(Color(red: 0.832, green: 0.896, blue: 0.747))
+        .background(Color(red: 0.886, green: 0.352, blue: 0.425))
         .preferredColorScheme(.dark)
 //        .border(Color.black, width: 1)
         
