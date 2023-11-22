@@ -14,29 +14,29 @@ struct WeatherView: View {
         ZStack(alignment: .leading) {
             VStack {
                 VStack(alignment: .leading, spacing: 5) {
+//      City name
                     Text(weather.name)
                         .bold().font(.title)
-                    
+//      DateTime
                     Text("Today,\(Date().formatted(.dateTime.month().month().day().hour().minute()))").fontWeight(.light)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-//                .border(Color.black, width: 1)
                 
                 Spacer()
                 
                 VStack() {
                     HStack {
-                        
+//              main weather icon
                         VStack(spacing: 20) {
                             Image(systemName: "sun.max")
                                 .font(.system(size: 40))
-                            
+//              main weather info
                             Text(weather.weather[0].main)
                         }
                         .frame(width: 150, alignment: .leading)
                         
                         Spacer()
-                        
+//              main weather degree
                         Text(weather.main.feelsLike.roundDouble() + "°")
                             .font(.system(size: 100))
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -44,7 +44,7 @@ struct WeatherView: View {
                     }
                     
                     Spacer().frame(height: 70)
-                    
+//              City picture
                     AsyncImage(url: URL(string: "https://cdn.dribbble.com/users/156832/screenshots/1860645/media/af86cffcc5ce07fc9440da3e1b2e90aa.png")) { image in image.resizable().aspectRatio(contentMode: .fit).frame(width: 350)
                     } placeholder: {
                         ProgressView()
@@ -53,11 +53,11 @@ struct WeatherView: View {
                     Spacer()
                 }
                 .frame(maxWidth: .infinity)
-//                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
             }
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
-            
+           
+//     detailed info
             VStack() {
                 Spacer()
                 
