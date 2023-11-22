@@ -45,7 +45,7 @@ struct WeatherView: View {
                     
                     Spacer().frame(height: 70)
                     
-                    AsyncImage(url: URL(string: "https://cdn.dribbble.com/users/665790/screenshots/3118982/media/a025bf3332bbb65189d3c2014cb41aba.jpg")) { image in image.resizable().aspectRatio(contentMode: .fit).frame(width: 350)
+                    AsyncImage(url: URL(string: "https://cdn.dribbble.com/users/156832/screenshots/1860645/media/af86cffcc5ce07fc9440da3e1b2e90aa.png")) { image in image.resizable().aspectRatio(contentMode: .fit).frame(width: 350)
                     } placeholder: {
                         ProgressView()
                     }
@@ -86,14 +86,14 @@ struct WeatherView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
                 .padding(.bottom, 20)
-                .foregroundColor(Color(red: 0.886, green: 0.352, blue: 0.425))
+                .foregroundColor(Color(red: 0.263, green: 0.263, blue: 0.301))
                 .background(.white)
                 .cornerRadius(20, corners: [.topLeft, .topRight])
             }
             
         }
         .edgesIgnoringSafeArea(.bottom)
-        .background(Color(red: 0.886, green: 0.352, blue: 0.425))
+        .background(Color(red: 0.263, green: 0.263, blue: 0.301))
         .preferredColorScheme(.dark)
 //        .border(Color.black, width: 1)
         
