@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Hawaii",
+    "local_names": {
+      "uk": "острів Гаваї",
+      "ja": "ハワイ島",
+      "ru": "остров Гавайи",
+      "en": "Hawaii",
+      "fr": "Hawaï"
+    },
+    "lat": 19.58955475,
+    "lon": -155.44869830348483,
+    "country": "US",
+    "state": "Hawaii"
+  }
+]

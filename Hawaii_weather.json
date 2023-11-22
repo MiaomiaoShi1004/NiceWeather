@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": -156.5003,
+    "lat": 20.7503
+  },
+  "weather": [
+    {
+      "id": 801,
+      "main": "Clouds",
+      "description": "few clouds",
+      "icon": "02n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 296.48,
+    "feels_like": 297.4,
+    "temp_min": 295.16,
+    "temp_max": 297.51,
+    "pressure": 1016,
+    "humidity": 97
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 6.17,
+    "deg": 40
+  },
+  "clouds": {
+    "all": 20
+  },
+  "dt": 1700666849,
+  "sys": {
+    "type": 2,
+    "id": 19170,
+    "country": "US",
+    "sunrise": 1700671228,
+    "sunset": 1700711049
+  },
+  "timezone": -36000,
+  "id": 5855797,
+  "name": "Hawaii",
+  "cod": 200
+}
