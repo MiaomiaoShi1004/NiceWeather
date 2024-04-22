@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BFF9CC86-FFA4-4D66-9BC3-3B95A820EF2A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A56230A-E084-4B46-8F60-B10901A3A5E0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NiceWeather/NiceWeatherApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "4A56230A-E084-4B46-8F60-B10901A3A5E0 - 6d3d7d40554ca5b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NiceWeather.NiceWeatherApp.body.getter : some"
+                  moduleName = "NiceWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/miaomiao/Documents/ios_projects/NiceWeather/NiceWeather/NiceWeatherApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14">
+               </Location>
+               <Location
+                  uuid = "4A56230A-E084-4B46-8F60-B10901A3A5E0 - 3f3e4c1e58553af9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; NiceWeather.WeatherView in NiceWeather.NiceWeatherApp.body.getter : some"
+                  moduleName = "NiceWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/miaomiao/Documents/ios_projects/NiceWeather/NiceWeather/NiceWeatherApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
